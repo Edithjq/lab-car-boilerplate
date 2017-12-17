@@ -1,1 +1,125 @@
-/* Los estilos de tu proyecto */
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+/*pading del nav*/
+nav{
+	padding-bottom: 1em;
+}
+
+
+/*FONDO PRINCIPAL*/
+
+.container-principal{
+	max-width: 100%;
+	padding-top: 200px;
+	max-height: 100%;
+	background-image: url("../assets/images/taxi.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+  	background-position: bottom; /*me posiciona la imagen en el bottom*/
+	display: flex;
+	flex-direction: column; 
+	}
+  	/*flex-wrap: wrap;*/
+	
+
+
+/*posicionar el menu hamburgueza*/
+.display-flex{
+	display: flex;
+	justify-content: space-around;
+
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+/*logo*/
+.image-logo a img{
+	outline: 1px solid red;
+	width: 7em;
+
+}
+.navbar-nav >li>a>span  {
+	text-transform: capitalize;
+	font-weight: 600;
+}
+
+/*--CONTENEDOR GRANDE*/
+.jumbotron{
+	background-color: #FBDB06;
+}
+
+/*.item img{
+	margin: auto;
+	width: 70%;
+	height: auto;
+	outline: 1px solid blue;
+}*/
+
+.container-celular{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border: 1px solid white;
+	/*padding: 15px;*/
+/*	flex-wrap: wrap;*/
+}
+
+.item{
+	/*outline: 1px solid red;*/
+	max-width: 100%;	
+}
+
+
+.item-titulo span{
+	display: block;
+	text-align: center;
+	font-weight: 500;
+	font-size: 1.5em;
+}
+.item-text{
+	display: none;
+}
+.item-titulo span, h2, h3, p{
+	color: white;
+}
+
+/*************************************************
+			DESKTOP
+************************************************+*/
+
+@media screen and (min-width: 768px){	
+	.container-principal{
+		padding-top: 300px;
+	}
+	.container-celular{
+		flex-direction: row;
+		justify-content: space-around;
+		width: 90%;
+		/*padding: 20px;*/
+	}
+	.item{
+		max-width: 50%;
+		outline: 1px solid green;
+		/*margin: 20px;*/
+	}
+	.item-titulo span{
+		display: none;
+	}
+	.item-text{
+		display: block;
+		font-size: 0.5em;
+	}
+
+	.div-text{
+		max-width: 80%;
+	}
+
+}
+
