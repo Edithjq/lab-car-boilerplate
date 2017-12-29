@@ -6,7 +6,7 @@ El presente trabajo tiene como objetivo
 
 ## MOBIL
 
-![mobil](assets/img/mobile.png)
+![mobil](assets/images/mobile.png)
 
 ## DESKTOP
-![mobil](assets/img/desktop.png)
+![mobil](assets/images/desktop.png)
