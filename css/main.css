@@ -1,14 +1,25 @@
   *{
 	margin: 0px;
 	padding: 0px;
+	color: white;
 	box-sizing: border-box;
 }
 
+/*GENERALES------------*/
+/*--------------NAV-----------------*/
 /*pading del nav*/
+
 nav{
 	padding-bottom: 1em;
 }
-
+ul{
+	padding-top: 10px;
+}
+li span{
+	color: black;
+	font-size: 1.2em;
+	text-transform: capitalize;
+}
 
 /*FONDO PRINCIPAL*/
 
@@ -31,17 +42,7 @@ nav{
 
 }
 
-/*--CONTENEDOR GRANDE*/
-.color-mostaza, .jumbotron-app{
-	background-color:#F6AE02;
-
-}
-/*1mer div que cubre la imagen en un mobile*/
-.items-app{
-	display: table;
-
-}
-
+/*CAJITA FLOTANT*/
 .cajita-flotante-movil{
 	background-color: #F6AE02;
 	padding-bottom: 20px;
@@ -51,57 +52,140 @@ nav{
 
 }
 
-.cajita-flotante h1{
-	color: white;
-	/*font-weight: bold;*/
-	font-size: 2em;
-}
-
-.cajita-flotante img{  
-	max-width: 100%;
-	width: 80px;
-	height: auto;
-}
 button{
 	padding: 0px;
 	margin: 20px;
+	font-weight: bold
 }
 
-h3, p{
-	color: white;
+ h1{
 	font-size: 2em;
 }
 
+h3{
+	font-size: 1.3em;
+}
+
+p{
+	font-size: 1em;
+}
+
+
+
+/*--CONTENEDOR GRANDE*/
+.color-mostaza, .jumbotron-app{
+	background-color:#F6AE02;
+
+}
+/*1mer div que cubre la imagen en un mobile*/
+.items-app{
+	display: table;
+	border: 1px solid white;
+	margin: 20px;
+	padding: 5px;
+
+}
+.app{
+	padding: 10px;
+	text-align: center;
+}
+.iphone{
+	padding-top: 50px;
+	/*outline: 1px solid red;*/
+}
+
+/*----------------------------------tarifa----------------------------------------------*/
+/*.tarifa{
+	padding-bottom: 20px;
+}*/
+.botontarifa{
+	/*outline:  1px solid red;*/
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 80%;
+	margin: 20px;
+	/*display: inline-block;*/
+}
+
+.input{
+	margin-left: 10px;
+	border: 1px solid white;
+	outline: none;
+	color: white;
+	background-color: #F6AE02;
+}
+
+
+
+/*-----------------section-image-------------*/
 .section-image{
 	background-image: url(../assets/images/conduce.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-  	background-position: center;
-  	padding-top:350px;
-  	margin: 0px;
+	background-position: left bottom;
+	max-width: 100%;
+	height: 400px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+
 }
 
+/*--------section tarifas-----------*/
+
+
+/*------------------footer -------------*/
 input{
 	width: 70%;
 }
-
+footer{
+	background-color: black;
+}
+.logoblanco{
+	padding: 10px;
+	border-bottom: 2px solid white;
+}
 .footer{
 	padding: 50px;
 	display: flex; 
 	justify-content: space-around;
-	outline: 1px solid blue;
+	/*outline: 1px solid blue;*/
+	background-color: black;
+	color: white;
 }
-.palabrasclave{
+
+.footer-movil{
+	display: flex;
+	justify-content: space-around;
+}
+.link-footer{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	/*outline: 1px solid red;*/
+}
+.link-footer span{
+	padding: 5px;
 }
 
+.link-footer  img{
+	/*width: 30%;*/
+	margin: 10px;
+	/*outline: 1px solid red;*/
+}
+.span-footer{
+	padding: 10px;
+	border-top: 2px solid white;
+}
+
+
+/*--------------------------------------*/
 @media screen and (min-width: 768px){
 	.cajita-flotante-desktop{
 		background-color: #F6AE02;
 		padding-bottom: 20px;
-		width: 40%;
 		display: flex;
 		justify-content: center;
 		  }
@@ -112,23 +196,36 @@ input{
 		background-color: #F6AE02;
 		border: 1px solid white;
 		display: flex;
-		justify-content: space-around;
-		align-items: center;
+		justify-content: space-between;
+		margin-left: 0px;
 		/*outline: 1px solid blue;*/
 
 	}
-	
+
+/*cajita-flotante-desktop*/
+.logo-blanco{
+	/*outline: 1px solid red;*/
+	display: flex;
+}
+.logo-blanco img{
+	margin: 10px;
+}
+
+/*cajita conduce*/
+.right{
+background-color: 	rgba(52, 52, 52, 0.45);
+}
+
+p{
+	font-size:  1.5em;
+}
 
 
-/*	.img-width{*/
-	/*	display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	}*/
+/*--------section tarifas-----------*/
 
-/*	.img-width img{
-		width: 100%;;
-	}
-	*/
+.tarifas{
+	padding: 4em;
+	height: auto;
+}
+
 }
