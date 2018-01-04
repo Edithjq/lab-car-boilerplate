@@ -14,11 +14,14 @@ El presente trabajo tiene como objetivo
 
 ## MODALES
 - MODAL INICIAR SESION
+
 ![mobil](assets/images/modal1.png)
 
 - MODAL REGISTRATE
+
 ![mobil](assets/images/modal2.png)
 
 - MODAL CONDUCE
+
 ![mobil](assets/images/modal3.png)
 
