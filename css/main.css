@@ -1,13 +1,15 @@
+ /*GENERALES------------*/
+
   *{
 	margin: 0px;
 	padding: 0px;
-	color: white;
 	box-sizing: border-box;
 }
 
-/*GENERALES------------*/
+body{
+	color: white;
+}
 /*--------------NAV-----------------*/
-/*pading del nav*/
 
 nav{
 	padding-bottom: 1em;
@@ -75,7 +77,6 @@ p{
 /*--CONTENEDOR GRANDE*/
 .color-mostaza, .jumbotron-app{
 	background-color:#F6AE02;
-
 }
 /*1mer div que cubre la imagen en un mobile*/
 .items-app{
@@ -169,7 +170,15 @@ footer{
 .link-footer span{
 	padding: 5px;
 }
+.link-footer span a {
+	text-decoration: none;
+	list-style: none;
+	color: darkblue;
+}
 
+.link-footer span a:hover{
+	color: #F6AE02;
+}
 .link-footer  img{
 	/*width: 30%;*/
 	margin: 10px;
@@ -227,5 +236,64 @@ p{
 	padding: 4em;
 	height: auto;
 }
+.text-danger{
+	font-weight: 700;
+}
 
+
+/*----------MODAL INICIAR SESION--------*/
+.teal{
+	background-color: teal;
+}
+.link{
+	display: flex;
+	justify-content: center;
+	padding: 5px;
+}
+.link a{
+	text-decoration: none;
+	font-weight: 700;
+	color: red;
+	margin-left: 5px;
+}
+
+/*------------MODAL REGISTRATE---------------*/
+.color-fuente{
+	color: black;
+
+}
+.color-fuente label{
+	display: none;
+}
+
+.silver{
+	background: silver
+}
+.modal-content button{
+	margin: 0px;
+}
+
+.modal-header .black{
+	background-color: black;
+	color: white;
+}
+
+.modal-body .gray{
+	background-color: gray;
+	color: white;
+}
+.modal-body .aqua{
+	background-color: aqua;
+	color: white;
+}
+
+/*------------MODAL CONDUCE----*/
+
+.label-conduce label{
+	color: black;
+	font-weight: 600;
+}
+.text{
+	color: black;
+	
 }
